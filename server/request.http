@@ -1,0 +1,88 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "minhtu",
+    "password": "minhtu"
+}
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "hello",
+    "password": "hello"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "minhtu",
+    "password": "minhtu"
+}
+
+###
+
+POST http://localhost:5000/api/wallets
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDJhYjViYTM2OTRkNzk3YTc0OTNmMmUiLCJpYXQiOjE2ODA1MjA2MzR9.ye8b7fMGklWbFeQnPlcvsP9_TvzCz0Z2u4dbAHmglLg
+
+{
+    "name": "Bitcoin",
+    "balance": 50.00,
+    "url": "bitcoin.org",
+    "status": "Active"
+}
+
+###
+
+POST http://localhost:5000/api/wallets
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDJhYjViYTM2OTRkNzk3YTc0OTNmMmUiLCJpYXQiOjE2ODA1MjA2MzR9.ye8b7fMGklWbFeQnPlcvsP9_TvzCz0Z2u4dbAHmglLg
+
+{
+    "name": "Ethereum",
+    "balance": 30.99,
+    "url": "ethereum.org",
+    "status": "Deactive"
+}
+
+###
+
+POST http://localhost:5000/api/wallets
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDI5YjUwNmFkY2EwMDY1MzgzYzQxN2UiLCJpYXQiOjE2ODA0NTQ5MTl9.e7SzeGrrRgceOPNI2VEglvmPem510woqBWC3LwLL7vc
+
+{
+    "name": "Tether",
+    "balance": 20.52,
+    "url": "tether.to"
+}
+
+###
+
+GET http://localhost:5000/api/wallets
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDI2ZWI4OGQ3ZDJmNGYzZjA5MjA1NDgiLCJpYXQiOjE2ODA1MTE3NzR9._ajMst4J0sLK7XnmhG0IjRoUFSid6q70N4bTsy6EhQI
+
+###
+
+PUT http://localhost:5000/api/wallets/64297ac101f15c698f59a4d9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDI2ZWI4OGQ3ZDJmNGYzZjA5MjA1NDgiLCJpYXQiOjE2ODA1MTE3NzR9._ajMst4J0sLK7XnmhG0IjRoUFSid6q70N4bTsy6EhQI
+Content-Type: application/json
+
+{
+    "name": "Wrapped Bitcoin",
+    "balance": 40.22,
+    "url": "https://wbtc.network",
+    "status": "Active"
+}
+
+###
+
+DELETE http://localhost:5000/api/wallets/642aaaf17aa4848122bbfb80
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDI2ZWI4OGQ3ZDJmNGYzZjA5MjA1NDgiLCJpYXQiOjE2ODA1MTE3NzR9._ajMst4J0sLK7XnmhG0IjRoUFSid6q70N4bTsy6EhQI
