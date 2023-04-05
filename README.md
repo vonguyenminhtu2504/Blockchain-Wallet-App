@@ -1,1 +1,1 @@
-Demo Blockchain Payment App
+Demo Blockchain Wallet App
